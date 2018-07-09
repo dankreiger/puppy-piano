@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Synth } from 'tone';
 import { octaves, tonDrueckenSwitch, tonLassenSwitch, spielTon } from './helpers';
 
 @Component({
@@ -10,7 +11,8 @@ export class PianoComponent implements OnInit {
   public octaves = octaves;
 
   onClickTon(event) {
-    spielTon((<Element>event.target).id);
+    const synth = new Synth().toMaster();
+    synth.triggerAttackRelease((<Element>event.target).id, '8n');
   }
 
   ngOnInit() {
