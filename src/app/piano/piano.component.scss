@@ -8,9 +8,7 @@
     background: radial-gradient(bottom left, farthest-corner, #999, #666);
   }
 
-  /* Piano Wrapper */
-
-  .p-wrapper {
+  .klavier-wrapper {
     background: #000;
     background: -webkit-linear-gradient(
       -60deg,
@@ -29,17 +27,18 @@
     animation: puppy 2s;
   }
 
-  /* Tuts */
-
-  ul.piano {
+  .klavier {
     width: 100%;
     border-top: 2px solid #222;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
     li {
       float: left;
       display: inline;
       width: 40px;
       position: relative;
-      .anchor {
+      .weisse-taste {
         display: block;
         height: 220px;
         background: #fff;
@@ -49,7 +48,7 @@
           inset 1px 0px 0px #fff, inset -1px 0px 0px #fff,
           0 4px 3px rgba(0, 0, 0, 0.7);
         border-radius: 0 0 3px 3px;
-        &:active {
+        &:active, &.active {
           box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
           position: relative;
           top: 2px;
@@ -93,7 +92,7 @@
         box-shadow: inset 0px -1px 2px rgba(255, 255, 255, 0.4),
           0 2px 3px rgba(0, 0, 0, 0.4);
         border-radius: 0 0 2px 2px;
-        &:active {
+        &:active, &.active {
           border-bottom-width: 2px;
           height: 123px;
           box-shadow: inset 0px -1px 1px rgba(255, 255, 255, 0.4),
