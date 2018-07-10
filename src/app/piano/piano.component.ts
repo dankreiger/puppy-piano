@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Synth } from 'tone';
-import { octaves, tonDrueckenSwitch, tonLassenSwitch, spielTon } from './helpers';
+import { tonSpielenMap, tonLassenMap } from './helpers';
+import { octaves } from './octaves';
 
 @Component({
   selector: 'app-piano',
@@ -17,12 +18,11 @@ export class PianoComponent implements OnInit {
 
   ngOnInit() {
     document.body.onkeydown = e => {
-      console.log(e.code); // to be continued
-      tonDrueckenSwitch(e.code);
+      tonSpielenMap(e.code);
     };
 
     document.body.onkeyup = e => {
-      tonLassenSwitch(e.code);
+      tonLassenMap(e.code);
     };
   }
 }
