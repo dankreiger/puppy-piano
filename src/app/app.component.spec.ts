@@ -6,7 +6,7 @@ import { PuppyComponent } from './puppy/puppy.component';
 import { PianoPipe } from './piano/piano.pipe';
 
 
-fdescribe('AppComponent', () => {
+describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
