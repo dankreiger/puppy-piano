@@ -12,7 +12,7 @@ addons:
 language: node_js
 
 node_js:
-  - 7
+  - "lts/*"
 
 before_script:
   - set -e
