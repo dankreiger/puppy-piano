@@ -6,8 +6,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "tslint --fix src/app/**/*.ts",
-      "pre-push": "npm test"
+      "pre-commit": "tslint --fix src/app/**/*.ts"
     }
   },
   "scripts": {
