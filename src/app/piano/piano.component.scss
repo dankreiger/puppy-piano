@@ -24,7 +24,7 @@
       inset 0 -1px 1px rgba(255, 255, 255, 0.5), inset 0 -4px 5px #000;
     border: 2px solid #333;
     border-radius: 0 0 5px 5px;
-    animation: puppy 2s;
+    animation: aiiight 2s;
   }
 
   .klavier {
@@ -104,7 +104,7 @@
   }
 
   /* Animation */
-  @-webkit-keyframes puppy {
+  @-webkit-keyframes aiiight {
     from {
       opacity: 0;
     }
@@ -114,7 +114,7 @@
     }
   }
 
-  @-moz-keyframes puppy {
+  @-moz-keyframes aiiight {
     from {
       opacity: 0;
     }
@@ -124,7 +124,7 @@
     }
   }
 
-  @keyframes puppy {
+  @keyframes aiiight {
     from {
       opacity: 0;
     }
@@ -134,3 +134,4 @@
     }
   }
 }
+
