@@ -6,14 +6,14 @@ import { keyMap } from './keyMap';
 let gedrueckt = false;
 
 const tonDruecken = ton => {
-  if(document.getElementById(ton)) {
+  if (document.getElementById(ton)) {
     document.getElementById(ton).classList.add('active');
   }
 };
 
 const tonLassen = ton => {
   gedrueckt = false;
-  if(document.getElementById(ton)) {
+  if (document.getElementById(ton)) {
     document.getElementById(ton).classList.remove('active');
   }
 };
@@ -27,7 +27,7 @@ export const spielTon = ton => {
 };
 
 
-export const tonSpielenMap = code => { spielTon(keyMap[code]); tonDruecken(keyMap[code]); }
+export const tonSpielenMap = code => { spielTon(keyMap[code]); tonDruecken(keyMap[code]); };
 export const tonLassenMap = code => tonLassen(keyMap[code]);
 
 
