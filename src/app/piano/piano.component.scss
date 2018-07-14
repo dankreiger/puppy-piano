@@ -33,6 +33,10 @@
     padding-left: 0;
     list-style: none;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 220px;
+    overflow: hidden;
     li {
       float: left;
       display: inline;
