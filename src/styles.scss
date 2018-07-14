@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  background: #666;
+  background: radial-gradient(bottom left, farthest-corner, #999, #666);
+}
+:focus {
+  outline: none !important;
+}

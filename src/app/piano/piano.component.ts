@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Synth } from 'tone';
 import { tonSpielenMap, tonLassenMap } from './helpers';
-import { displayOctaves } from './octaves';
+import { octaves } from './octaves';
 
 @Component({
   selector: 'app-piano',
@@ -9,7 +9,7 @@ import { displayOctaves } from './octaves';
   styleUrls: ['./piano.component.scss']
 })
 export class PianoComponent implements OnInit {
-  public displayOctaves = displayOctaves;
+  public octaves = octaves;
 
   onClickTon(event) {
     const synth = new Synth().toMaster();
